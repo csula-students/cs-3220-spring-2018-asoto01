@@ -1,0 +1,15 @@
+Theme:
+# Bitcoin c}licker
+
+Resource:
+* Bitcoin
+
+Generators:
+* AntMiner S7
+* AntMiner s9
+* Bitcoin Factory
+
+Story:
+* Bitcoin? Click on the button to create a Bitcoin.
+* Your Bitcoin are generating you wealth.
+* B is for Bitcoin. And that is good enough for me.
