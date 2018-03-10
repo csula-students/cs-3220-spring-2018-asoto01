@@ -9,7 +9,7 @@ export default function (store) {
 			this.textContent = this.store.state.example;
 
 			this.onStateChange = this.handleStateChange.bind(this);
-
+			
 			// add click event
 			this.addEventListener('click', () => {
 				this.store.dispatch({
@@ -18,9 +18,8 @@ export default function (store) {
 				});
 			});
 		}
-
+		
 		handleStateChange (newState) {
-			console.log('ExampleComponent#stateChange', this);
 			this.textContent = newState.example;
 		}
 

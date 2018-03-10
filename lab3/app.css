@@ -1,0 +1,26 @@
+html {
+    background-color: orange;
+}
+
+textarea{
+    width: 300px;
+    height: 75px;
+    padding: 25px;
+    margin: 25px;
+    resize: none;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.generators {
+    width: 300px;
+    border: 25px solid whitesmoke;
+    padding: 25px;
+    margin: 25px;
+}
+
+.containers {
+    justify-content: center;
+}

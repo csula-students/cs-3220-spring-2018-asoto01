@@ -75,9 +75,31 @@ main();
 function main () {
 	// TODO: fill the blank based on the theme you have choosen
 	const initialState = {
-		example: 'Hello custom element',
+		example: 'Hello custom elements',
 		counter: 0,
-		generators: [],
+		generators: [
+			{
+				name: 'Antminer S7',
+				description: 'Power hungry machine that generates coins.',
+				rate: 5,
+				baseCost: 10,
+				quantity: 0
+			},
+			{
+				name: 'Antminer s9',
+				description: 'Powerful, loud, and mines more coins.',
+				rate: 10,
+				baseCost: 20,
+				quantity: 0
+			},
+			{
+				name: 'Factory',
+				description: 'A factory that mines coins.',
+				rate: 30,
+				baseCost: 50,
+				quantity: 0
+			}
+		],
 		story: []
 	};
 
@@ -98,7 +120,6 @@ function main () {
 	// For ease of debugging purpose, we will expose the critical store under window
 	// ps: window is global
 	window.store = store;
-
 	// start game loop
 	loop(store);
 }

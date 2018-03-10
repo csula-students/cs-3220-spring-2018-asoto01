@@ -4,10 +4,19 @@ export default function (store) {
 			super();
 			this.store = store;
 
-			this.onStateChange = this.handleStateChange.bind(this);
+			// TODO: render generator initial view
 
-			// TODO: add click event to increment counter
-			// hint: use "store.dispatch" method (see example component)
+			// TODO: subscribe to store on change event
+
+			// TODO: add click event		
+			this.addEventListener('click', () => {
+				this.store.dispatch({
+					type: 'INCREMENT_COUNTER',
+					payload: this.store.state.counter
+				});
+			});
+			this.innerHTML = `<button>Generate 1 BTC</button>`;
 		}
+		
 	};
 }
