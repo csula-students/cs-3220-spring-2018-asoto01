@@ -7,3 +7,10 @@ export const generator = {
 	quantity: 0,
 	unlockValue: 10
 };
+
+export const story = {
+	name: 'Grandma shows up',
+	description: 'desc',
+	triggeredAt: 10,
+	state: 'hidden'
+};

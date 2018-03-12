@@ -7,23 +7,20 @@
 </head>
 <body>
     <h1>Bitcoin Mining Game</h1>
-    
-    <textarea readonly>
+    <div class="story"><game-story-book></game-story-book></div>
+    <!-- <textarea readonly>
         Bitcoin? Click on the button to get somes Bitcoin.
         
         Your Bitcoin are generating you wealth.
         
         B is for Bitcoin. And that is good enough for me.
-    </textarea>
-    <component-example data-id="hello" ></component-example>
+    </textarea> -->
     <br/>
-    <div class="clicker">
+    <game-counter></game-counter>
       <h2>Amount of Bitcoin (BTC):</h2>
       <!-- from button -->
       <game-button></game-button>
       <!-- from counter -->
-      <game-counter></game-counter>
-    </div> 
     <!-- from generator -->
     <game-generator data-id="0"></game-generator>
     <game-generator data-id="1"></game-generator>
