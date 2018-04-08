@@ -59,4 +59,9 @@ public class EventsDAOImpl implements EventsDAO {
 	public void add(Event event) {
 		// TODO: add a new event to the context
 	}
+
+	@Override
+	public void remove(int id) {
+		// TODO: remove a single event given id
+	}
 }

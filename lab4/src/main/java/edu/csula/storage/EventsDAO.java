@@ -23,7 +23,11 @@ public interface EventsDAO {
 	 */
 	public void set(int id, Event event);
 	/**
-	 * addEvent adds a new event to database storage layer
+	 * adds a new event to database storage layer
 	 */
 	public void add(Event event);
+	/**
+	 * remove an existing event by id
+	 */
+	public void remove(int id);
 }
