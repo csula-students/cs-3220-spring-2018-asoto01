@@ -24,12 +24,63 @@ public class AdminEventsServlet extends HttpServlet {
 		EventsDAO dao = new EventsDAOImpl(getServletContext());
 		Collection<Event> events = dao.getAll();
 		System.out.println(events);
-		out.println("<h1>Hello events servlet!</h1>");
+
+		String html =  "<link rel='stylesheet' type='text/css' href='/css/app.css'>" +
+		"<h1>Incremental Game Framework</h1>"+
+		""+
+		"  <div class=\"topnav\">"+
+		"    <a class=\"active\" href=\"game-info.html\">Game Information</a>"+
+		"    <a href=\"generator-meta.html\">Generators</a>"+
+		"    <a href=\"event-meta.html\">Events</a>"+
+		"  </div>"+
+		"<div class=\"container\">"+
+		"  <div class=\"metainfo\">"+
+		"    <p>Event Name:</p>"+
+		"    <input type=\"text\" placeholder=\"Enter event name here...\">"+
+		"    <p>Event Description:</p>"+
+		"    <input type=\"text\" placeholder=\"Enter event description here...\">"+
+		"    <p>Trigger at:</p>"+
+		"    <input type=\"text\" placeholder=\"Enter trigger event here...\">"+
+		"    <br>"+
+		"    <br>"+
+		"    <button type=\"submit\">Add/Edit</button>"+
+		"  </div>"+
+		"  <div>"+
+		"  <table>"+
+		"        <thead>"+
+		"          <tr>"+
+		"            <th>Name</th>"+
+		"            <th>Description</th>"+
+		"            <th>Trigger at</th>"+
+		"          </tr>"+
+		"        </thead>"+
+		"        <tbody>"+
+		"          <tr>"+
+		"            <td>Jim</td>"+
+		"            <td>00001</td>"+
+		"            <td>43</td>"+
+		"          </tr>"+
+		"          <tr>"+
+		"            <td>Sue</td>"+
+		"            <td>00002</td>"+
+		"            <td>45</td>"+
+		"          </tr>"+
+		"          <tr>"+
+		"            <td>Barb</td>"+
+		"            <td>00003</td>"+
+		"            <td>53</td>"+
+		"          </tr>"+
+		"        </tbody>"+
+		"      </table>"+
+		"    </div>"+
+		"  </div>";
+		out.println(html);
 	}
 
 
 	@Override
 	public void doPost( HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO: handle upsert transaction
+
 	}
 }
