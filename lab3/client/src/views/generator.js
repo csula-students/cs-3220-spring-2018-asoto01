@@ -26,9 +26,9 @@ export default function (store) {
 
 		render () {
 			this.innerHTML = `<div class="generators">
-            <span class="resource btn">
-                <div class="resource header">${this.store.state.generators[this.dataset.id].name}</div>
-                <span class="resource header">
+            <span>
+                <div>${this.store.state.generators[this.dataset.id].name}</div>
+                <span>
                     <div id="counterCoin">${this.store.state.generators[this.dataset.id].quantity}</div>
                 </span>
             </span>
@@ -36,7 +36,7 @@ export default function (store) {
             <p>${this.store.state.generators[this.dataset.id].rate}/60</p>
             <span class="resources">
                 ${this.store.state.generators[this.dataset.id].baseCost}
-                <button>Buy ${this.store.state.generators[this.dataset.id].name}</button>
+                <button> ${this.store.state.generators[this.dataset.id].name}</button>
             </span>
 		</div>`;
 
@@ -44,8 +44,7 @@ export default function (store) {
 			this.store.dispatch({
 				type:'BUY_GENERATOR',
 				payload: {
-					attribute: this.getAttribute("data-id"),
-					quantity: 1	
+					attribute: this.getAttribute("data-id")	
 				}
 			});
 		});

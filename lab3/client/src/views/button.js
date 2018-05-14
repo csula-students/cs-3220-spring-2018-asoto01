@@ -11,7 +11,7 @@ export default function (store) {
 			// TODO: add click event		
 			this.addEventListener('click', () => {
 				this.store.dispatch({
-					type: 'INCREMENT_COUNTER',
+					type: 'INCREMENT_CLICK',
 					payload: this.store.state.counter
 				});
 			});

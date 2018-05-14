@@ -19,8 +19,19 @@ textarea{
     border: 25px solid whitesmoke;
     padding: 25px;
     margin: 25px;
+    display: grid;
+
 }
 
 .containers {
     justify-content: center;
+}
+
+.story{
+    background-color: orange;
+    width: 300px;
+    height: 50px;
+    border: 25px solid whitesmoke;
+    padding: 25px;
+    margin: 25px;
 }

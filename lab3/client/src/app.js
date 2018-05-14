@@ -100,7 +100,26 @@ function main () {
 				quantity: 0
 			}
 		],
-		story: []
+		story: [
+			{
+				name: 'Beginner',
+				description: 'Keep mining those coins!',
+				triggeredAt: 10,
+				state: 'hidden'
+			},
+			{
+				name: 'Miner',
+				description: 'You are generating wealth!',
+				triggeredAt: 50,
+				state: 'hidden'
+			},
+			{
+				name: 'Baller',
+				description: 'Might as well buy a boat.',
+				triggeredAt: 250,
+				state: 'hidden'
+			}
+		]
 	};
 
 	// initialize store
